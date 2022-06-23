@@ -1,120 +1,70 @@
-:root {
+:root{
+    --text-color: #667085;
+    --main-color: #8e2424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
     display: flex;
-    justify-content: center;
-    background: #E5E5E5;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem, 0;
 }
 
-@font-face {
-    font-family: 'Inter';
-    src: url(../font/Inter.ttf);
+.links a{
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 2rem;
 }
 
-main {    
-   display: flex; 
-   flex-direction: column;
-   align-items: center;
-   width: 1440px;
-   height: 3503px;
-   background: #FFFFFF;
+button{
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
 }
 
-header {
+button#singUp {
+    background-color: var(--main-color);
+    color: #fff
+}
+
+/*Cabeçalho - Primeira seção*/
+
+.about-us{
+    padding: 7rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 1440px;
-    height: 80px;
+    gap: 1rem;
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 32px;
-    width: 1280px;
-    height: 44px;
+.about-us span {
+    color: var(--main-color);
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    width: 148px;
-    height: 26.99px;
+.about-us h1{
+    font-size: 2rem;
 }
 
-.logo__imagem{
-    width: 27px;
-    height: 26.77px;
-}
-
-.logo__texto{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #3A404E;
-}
-
-.paginas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    width: 370px;
-    height: 32px;
-}
-
-.paginas__link{
-    width: 70px;
-    height: 24px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #667085;
-}
-
-.botoes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    width: 207px;
-    height: 44px;
-}
-
-.bt-entrar{
-    padding: 10px 18px;
-    gap: 8px;
-    width: 83px;
-    height: 44px;
-    border-radius: 8px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #667085;
-}
-
-.bt-cadastrar{
-    padding: 10px 18px;
-    gap: 8px;
-    width: 112px;
-    height: 44px;
-    border-radius: 8px;
-    background: #8E2424;
-    border: 1px solid #8E2424;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
+.about-us p{
+    color: var(--text-color);
+    max-width: 50%;
+    text-align: center;
+    line-height: 1.5rem;
 }
